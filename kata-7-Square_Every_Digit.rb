@@ -1,5 +1,8 @@
 def square_digits num
-  # code goes here
+  # num.each { |i| i, i**}
+  num_to_array = num.to_s.split("")
+  #array_i = num_to_array.each { |j| j.to_i }
+  self.map! { |num| num.to_i * num.to_i }
 end
 
 puts square_digits(3212)
